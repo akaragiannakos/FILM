@@ -1,0 +1,20 @@
+﻿@model Film
+
+<h2>Szczegóły filmu</h2>
+
+<div>
+    <label>Nazwa:</label>
+    <span>@Model.Name</span>
+</div>
+<div>
+    <label>Opis:</label>
+    <span>@Model.Description</span>
+</div>
+<div>
+    <label>Cena:</label>
+    <span>@Model.Price</span>
+</div>
+
+<a asp-action="Index">Powrót do listy</a> |
+<a asp-action="Edit" asp-route-id="@Model.Id">Edytuj</a> |
+<a asp-action="Delete" asp-route-id="@Model.Id">Usuń</a>
